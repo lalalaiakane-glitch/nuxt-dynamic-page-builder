@@ -1,0 +1,44 @@
+{
+  "title": "Dynamic Page Builder Lesson 1",
+  "sections": [
+    {
+      "id": "hero-1",
+      "type": "hero",
+      "props": {
+        "eyebrow": "Lesson 1",
+        "title": "JSON renders this Nuxt page",
+        "description": "The page structure lives in data. Nuxt only decides which component should render each block.",
+        "primaryAction": "Explore the flow"
+      }
+    },
+    {
+      "id": "feature-1",
+      "type": "featureGrid",
+      "props": {
+        "title": "Why this matters",
+        "items": [
+          {
+            "title": "Composable",
+            "description": "Each section is a small component with a clear contract."
+          },
+          {
+            "title": "Editable",
+            "description": "Changing the JSON changes the page without rewriting templates."
+          },
+          {
+            "title": "Portable",
+            "description": "The same schema could later come from a CMS API."
+          }
+        ]
+      }
+    },
+    {
+      "id": "text-1",
+      "type": "richText",
+      "props": {
+        "title": "First principle",
+        "body": "A page builder does not store Vue components. It stores component names and data. The frontend owns how that data becomes UI."
+      }
+    }
+  ]
+}
